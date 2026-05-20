@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiMo Orbit 100T - Token Grant for Builders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">🚀 MiMo Orbit</div>
+            <h1>100T Token Grant for Builders</h1>
+            <p class="subtitle">Program pembagian 100 Triliun token gratis dari Xiaomi MiMo untuk developer & builder AI di seluruh dunia.</p>
+        </header>
+
+        <!-- Event Info -->
+        <section class="event-info">
+            <h2>📌 Tentang Program</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🎯 Total Token</h3>
+                    <p>100 Triliun token didistribusikan selama program berlangsung</p>
+                </div>
+                <div class="info-card">
+                    <h3>⏰ Durasi</h3>
+                    <p>30 hari — selama persediaan masih ada</p>
+                </div>
+                <div class="info-card">
+                    <h3>🌍 Terbuka Global</h3>
+                    <p>Untuk individual developer, tim, maupun perusahaan</p>
+                </div>
+                <div class="info-card">
+                    <h3>✅ Review Manual</h3>
+                    <p>Setiap aplikasi ditinjau satu per satu oleh tim Xiaomi</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Form -->
+        <section class="form-section">
+            <h2>📝 Form Pendaftaran</h2>
+            <p class="form-desc">Isi form di bawah ini untuk mengajukan token grant. Pastikan semua data terisi dengan benar.</p>
+
+            <form id="applicationForm" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="fullName">Nama Lengkap *</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Masukkan nama lengkap Anda">
+                    <span class="description">Nama lengkap sesuai identitas yang akan digunakan untuk verifikasi.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="contoh@email.com">
+                    <span class="description">Email aktif untuk menerima notifikasi dan API key token.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="applicantType">Tipe Pendaftar *</label>
+                    <select id="applicantType" name="applicantType" required>
+                        <option value="">-- Pilih Tipe --</option>
+                        <option value="individual">Individual Developer</option>
+                        <option value="team">Tim / Startup</option>
+                        <option value="enterprise">Perusahaan / Enterprise</option>
+                    </select>
+                    <span class="description">Kategori pendaftar: perorangan, tim kecil, atau organisasi besar.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="projectName">Nama Project *</label>
+                    <input type="text" id="projectName" name="projectName" required placeholder="Nama project AI Anda">
+                    <span class="description">Nama project atau produk AI yang akan menggunakan token MiMo.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="projectUrl">URL Project / GitHub</label>
+                    <input type="url" id="projectUrl" name="projectUrl" placeholder="https://github.com/username/project">
+                    <span class="description">Link repository atau website project (opsional, tapi meningkatkan peluang approval).</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="useCase">Deskripsi Use Case *</label>
+                    <textarea id="useCase" name="useCase" rows="4" required placeholder="Jelaskan bagaimana Anda akan menggunakan token MiMo..."></textarea>
+                    <span class="description">Jelaskan secara singkat bagaimana token akan digunakan dalam project Anda (maks 500 kata).</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="tokenAmount">Estimasi Token yang Dibutuhkan *</label>
+                    <select id="tokenAmount" name="tokenAmount" required>
+                        <option value="">-- Pilih Range --</option>
+                        <option value="1M-10M">1 Juta - 10 Juta token</option>
+                        <option value="10M-100M">10 Juta - 100 Juta token</option>
+                        <option value="100M-1B">100 Juta - 1 Miliar token</option>
+                        <option value="1B+">Lebih dari 1 Miliar token</option>
+                    </select>
+                    <span class="description">Perkiraan jumlah token yang dibutuhkan selama masa grant (30 hari).</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Negara *</label>
+                    <input type="text" id="country" name="country" required placeholder="Indonesia">
+                    <span class="description">Negara tempat Anda atau tim Anda beroperasi.</span>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Saya setuju dengan syarat & ketentuan program MiMo Orbit 100T</label>
+                </div>
+
+                <button type="submit" class="btn-submit">🚀 Kirim Pendaftaran</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Program ini diselenggarakan oleh <strong>Xiaomi MiMo</strong> — <a href="https://mimo.xiaomi.com" target="_blank">mimo.xiaomi.com</a></p>
+            <p class="small">Halaman ini dibuat untuk keperluan event. Bukan halaman resmi Xiaomi.</p>
+        </footer>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const data = new FormData(form);
+            
+            // Simple validation feedback
+            alert('✅ Pendaftaran berhasil dikirim!\n\nTerima kasih telah mendaftar program MiMo Orbit 100T.\nTim akan meninjau aplikasi Anda dalam 3-5 hari kerja.');
+            form.reset();
+        }
+    </script>
+</body>
+</html>
