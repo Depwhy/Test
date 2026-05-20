@@ -1,59 +1,72 @@
 # MiMo Orbit 100T - Token Grant for Builders
 
-Landing page sederhana untuk event **Xiaomi MiMo Orbit 100T Token Grant for Builders**.
+## 📖 Deskripsi Project
 
-## 📌 Tentang Event
+Project ini adalah landing page informatif untuk program **Xiaomi MiMo Orbit 100T Token Grant for Builders** — sebuah program dari Xiaomi yang membagikan 100 Triliun token AI secara gratis kepada developer di seluruh dunia.
 
-Xiaomi MiMo Orbit adalah program distribusi token gratis sebanyak **100 Triliun token** untuk developer dan builder AI di seluruh dunia. Program ini berlangsung selama 30 hari dan terbuka untuk individual developer, tim, maupun perusahaan.
+Halaman ini dibuat sebagai referensi cepat bagi siapa saja yang ingin tahu tentang program ini: apa itu, siapa yang bisa ikut, dan bagaimana cara mendaftar.
 
-Informasi resmi: [mimo.xiaomi.com](https://mimo.xiaomi.com)
+> **Catatan:** Ini bukan halaman resmi Xiaomi. Untuk pendaftaran resmi, kunjungi [100t.xiaomimimo.com](https://100t.xiaomimimo.com/)
 
 ---
 
-## 🗂 Struktur Project
+## 🎯 Tentang Event MiMo Orbit 100T
+
+| Info | Detail |
+|------|--------|
+| **Penyelenggara** | Xiaomi (MiMo AI Team) |
+| **Program** | MiMo Orbit 100T Token Grant |
+| **Total Token** | 100 Triliun (100T) token |
+| **Durasi** | 30 hari (selama persediaan masih ada) |
+| **Biaya** | Gratis |
+| **Target Peserta** | Developer individu, tim/startup, dan enterprise |
+| **Cakupan** | Global (seluruh dunia) |
+| **Proses** | Setiap aplikasi di-review manual oleh tim Xiaomi |
+
+### Apa yang Didapat?
+- Token gratis untuk mengakses model AI MiMo via API
+- Bisa digunakan untuk development, testing, dan production
+- Cocok untuk builder yang membuat aplikasi berbasis AI (chatbot, coding assistant, agent, dll)
+
+---
+
+## 📁 Struktur File
 
 ```
-├── index.html    → Halaman utama (event info + form pendaftaran)
-├── style.css     → Styling halaman
-└── README.md     → Dokumentasi project
+├── index.html   → Halaman utama (info event + link pendaftaran)
+├── style.css    → Styling (dark theme, minimalis)
+└── README.md    → Dokumentasi & deskripsi project
 ```
 
 ---
 
-## 📝 Deskripsi Field Form
+## 🚀 Cara Pakai
 
-| # | Field | Tipe | Wajib | Deskripsi |
-|---|-------|------|-------|-----------|
-| 1 | **Nama Lengkap** | Text | ✅ | Nama lengkap sesuai identitas untuk verifikasi akun |
-| 2 | **Email** | Email | ✅ | Email aktif untuk menerima notifikasi approval dan API key |
-| 3 | **Tipe Pendaftar** | Select | ✅ | Kategori pendaftar: Individual Developer, Tim/Startup, atau Enterprise |
-| 4 | **Nama Project** | Text | ✅ | Nama project atau produk AI yang akan menggunakan token |
-| 5 | **URL Project / GitHub** | URL | ❌ | Link repo GitHub atau website project (opsional, tapi meningkatkan peluang approval) |
-| 6 | **Deskripsi Use Case** | Textarea | ✅ | Penjelasan singkat bagaimana token akan digunakan dalam project (maks 500 kata) |
-| 7 | **Estimasi Token** | Select | ✅ | Perkiraan kebutuhan token selama 30 hari: 1M-10M, 10M-100M, 100M-1B, atau 1B+ |
-| 8 | **Negara** | Text | ✅ | Negara tempat pendaftar atau tim beroperasi |
-| 9 | **Persetujuan** | Checkbox | ✅ | Persetujuan terhadap syarat & ketentuan program |
+Cukup buka file `index.html` di browser — tidak perlu server atau instalasi apapun.
+
+```bash
+# Atau jika mau pakai live server
+npx serve .
+```
 
 ---
 
-## 🚀 Cara Menggunakan
+## 🔗 Link Penting
 
-1. Buka file `index.html` di browser
-2. Isi semua field yang wajib (ditandai *)
-3. Klik tombol **Kirim Pendaftaran**
-4. Akan muncul konfirmasi bahwa pendaftaran berhasil
+- 📋 **Daftar:** [100t.xiaomimimo.com](https://100t.xiaomimimo.com/)
+- 🌐 **MiMo Official:** [mimo.xiaomi.com](https://mimo.xiaomi.com/)
+- 💻 **GitHub MiMo:** [github.com/XiaomiMiMo](https://github.com/XiaomiMiMo)
 
 ---
 
-## 💡 Teknologi
+## 🛠 Teknologi
 
 - HTML5
-- CSS3 (Gradient, Grid, Flexbox)
-- Vanilla JavaScript (form handling)
-- Responsive Design (mobile-friendly)
+- CSS3 (dark theme, responsive)
+- Tanpa framework / library eksternal
 
 ---
 
-## ⚠️ Disclaimer
+## 📄 Lisensi
 
-Halaman ini dibuat untuk keperluan project/event dan **bukan halaman resmi dari Xiaomi**. Untuk informasi resmi, kunjungi [mimo.xiaomi.com](https://mimo.xiaomi.com).
+Project ini dibuat untuk keperluan informasi dan edukasi. Semua hak merek dagang MiMo dan Xiaomi adalah milik Xiaomi Inc.
